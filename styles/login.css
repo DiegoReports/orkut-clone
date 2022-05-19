@@ -1,0 +1,170 @@
+:root {
+  background-color: #f0c9ea;
+  font-family: 'Segoe UI', Arial, Helvetica, sans-serif;
+}
+
+.container {
+  width: 80%;
+  max-width: 650px;
+  height: 70vh;
+  background-color: #fff;
+  border-radius: 20px;
+
+  margin: auto;
+  margin-top: 5%;
+
+  box-shadow: 2px 3px 31px 9px rgba(232,37,142,0.3);
+  -webkit-box-shadow: 2px 3px 31px 9px rgba(232,37,142,0.3);
+  -moz-box-shadow: 2px 3px 31px 9px rgba(232,37,142,0.3);
+}
+
+.pink-font {
+  color: #e8258e;
+}
+
+.fields {
+  margin: 5% 10%;
+}
+
+.fields__title {
+  display: flex;
+  justify-content: center;
+}
+
+#field__title {
+  font-size: 15px;
+  font-weight: bold;
+  color: rgb(36, 36, 36);
+  margin-bottom: 5%;
+
+  margin-top: 20px;
+}
+
+.fields__textbox {
+  height: 100px;
+
+  display: flex;
+  flex-direction: column;
+  justify-content: space-around;
+}
+
+.fields__textbox > input {
+  height: 40px;
+  border: 1px solid silver;
+  border-radius: 10px;
+  margin-bottom: 5%;
+}
+
+#field__email:focus, #field__pass:focus {
+  border: 1px solid #e8258e;
+}
+
+.fields__textbox > input::placeholder {
+  position: relative;
+  left: 1rem;
+}
+
+.fields__remember {
+  margin-bottom: 20px;
+}
+
+.fields__remember > input {
+  cursor: pointer;
+}
+
+#field__remember + label {
+  display: block;
+  margin: 0em;
+  cursor: pointer;
+  padding: 0.1em;
+  }
+  
+  #field__remember {
+  display: none;
+  }
+  
+  #field__remember + label:before {
+  content: "\2714";
+  border: 0.13em solid #aaa;
+  border-radius: 0.0em;
+  display: inline-block;
+  width: 1em;
+  height: 1em;
+  padding-left: 0.2em;
+  padding-bottom: 0.3em;
+  margin-right: 0.2em;
+  vertical-align: bottom;
+  color: transparent;
+  transition: .6s;
+  }
+  
+  #field__remember + label:active:before {
+  transform: scale(0);
+  }
+  
+  #field__remember:checked + label:before {
+    background-color: #e8258e;
+    color: #fff;
+  }
+  
+  #field__remember:disabled + label:before {
+    transform: scale(1);
+    border-color: #aaa;
+  }
+  
+  #field__remember:checked:disabled + label:before {
+    transform: scale(1);
+    background-color: #bfb;
+    border-color: #bfb;
+  }
+
+
+#btn__login {
+  width: 100%;
+  border: none;
+  background-color: #e8258e;
+  color: #fff;
+  padding: 10px;
+  border-radius: 5px;
+  margin-bottom: 10px;
+  cursor: pointer;
+  transition: .6s;
+}
+
+#btn__login:hover {
+  background-color: #e561a7;
+}
+
+.fields__recovery >a, .fields__create > a{
+  text-decoration: none;
+  color: rgb(49, 49, 49);
+  transition: .6s;
+}
+
+.fields__recovery >a:hover {
+  color: #e561a7;
+}
+
+.fields__recovery {
+  display: flex;
+  justify-content: flex-end;
+  margin-bottom: 20%;
+}
+
+.fields__create {
+  display: flex;
+  justify-content: center;
+  font-weight: bold;
+  font-size: 20px;
+}
+
+.logo {
+  display: flex;
+  justify-content: center;
+  margin-top: 20px;
+}
+
+.logo > img {
+  height: 80px;
+}
+
